@@ -1,0 +1,92 @@
+/* MAIN CONTACT SECTION */
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+main h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    resize: vertical;
+}
+
+form textarea {
+    min-height: 120px;
+}
+
+form button {
+    width: 120px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+form button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+/* CONTACT INFO */
+.fcontact {
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.gmail-icon, .phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.gmail-icon img {
+    width: 25px;
+    height: 25px;
+}

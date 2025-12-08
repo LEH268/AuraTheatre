@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../Coding/css/sign-up.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="form-area">
+            <!-- Left bar with GIF -->
+            <div class="left-bar">
+                <img src="../Coding/image/cartoon for login.gif" alt="lock" style="max-width: 80%; height: auto;">
+            </div>
+
+            <!-- Right bar (form) -->
+            <form class="right-bar" onsubmit="return validateSignUp()">
+                <p>Create Account<br>Sign up to get started</p>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmpwd">Confirm Password:</label>
+                <input type="password" id="confirmpwd" name="confirmpwd" required>
+
+                <div style="margin-bottom: 15px;">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">I agree to the Terms of Service and Privacy Policy</label>
+                </div>
+
+                <button type="submit" class="logInButton">Create Account</button>
+                <hr>
+                <button type="button">Google</button>
+                <button type="button">Facebook</button>
+
+                <p style="margin-top: 20px;">
+                    Already have an account? <a href="log in.html">Log in now</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="sign_up.js"></script>
+</body>
+</html>
