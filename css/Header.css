@@ -1,0 +1,137 @@
+/* ===================== HEADER ===================== */
+.header-background {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.header-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 5, 35, 0.45);
+    backdrop-filter: blur(10px);
+    z-index: 0;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar {
+    position: relative;
+    z-index: 1; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding: 15px 20px;
+    background: rgba(20, 10, 40, 0.55);
+    border-radius: 12px;
+    border: 2px solid rgba(130, 60, 255, 0.4);
+    box-shadow: 0 0 20px rgba(130, 60, 255, 0.3);
+    color: #d7e2ff;
+}
+
+/* ===================== LOGO + WEBSITE NAME ===================== */
+.nav-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-1 p {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    padding-right: 20px;
+    color: #27e8ff;
+    text-shadow: 0 0 12px #27e8ff, 0 0 25px #8d4cff;
+}
+
+/* ===================== SEARCH BAR ===================== */
+.nav-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#searchBar {
+    height: 20px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #8d4cff;
+    max-width: 300px;
+    width: 100%;
+    background: rgba(20, 10, 40, 0.45);
+    color: #d7e2ff;
+}
+
+#searchBtn {
+    height: 36px;
+    width: 40px;
+    border-radius: 12px;
+    border: 2px solid rgba(130, 60, 255, 0.5);
+    background: rgba(130, 60, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#searchBtn:hover {
+    background: rgba(130, 60, 255, 0.6);
+    box-shadow: 0 0 12px rgba(130, 60, 255, 0.4);
+}
+
+/* ===================== PAGE LINKS ===================== */
+.nav-3 ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-3 a {
+    text-decoration: none;
+    color: #d7e2ff;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-shadow: 0 0 10px #27e8ff;
+}
+
+.nav-3 a:hover {
+    background-color: rgba(39, 232, 255, 0.3);
+    color: #ffcaf5;
+}
+
+/* ===================== USER AREA ===================== */
+.nav-4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #d7e2ff;
+}
+
+.user-login img {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(39, 232, 255, 0.5);
+    box-shadow: 0 0 10px rgba(39, 232, 255, 0.3);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
