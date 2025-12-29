@@ -4,8 +4,8 @@
         <title>Contact Us</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../Coding/css/Header.css">
-        <link rel="stylesheet" href="../Coding/css/Contact-Form.css">
         <link rel="stylesheet" href="../Coding/css/Footer.css">
+        <link rel="stylesheet" href="../Coding/css/Contact-Form.css">
     </head>
 
     <body>
@@ -15,16 +15,18 @@
                 <!-- Logo + Name -->
                 <div class="nav-1">
                     <a href="home.html" class="logo">
-                        <img src="../Coding/image/logo.png" alt="AuraTheatre" height="60px">
+                        <img src="../Coding/image/icon img/logo.png" alt="AuraTheatre" height="60px">
                     </a>
-                    <p>AuraTheatre</p>
+                    <a href="home.html">
+                        <p>AuraTheatre</p>
+                    </a>
                 </div>
 
                 <!-- Search bar -->
                 <div class="nav-2">
                     <input type="text" id="searchBar" placeholder="Search here">
                     <button onclick="searchSite()" id="searchBtn">
-                        <img src="../Coding/image/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                        <img src="../Coding/image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
                     </button>
                 </div>
 
@@ -41,7 +43,7 @@
                 <!-- User section -->
                 <div class="nav-4">
                     <div class="user-login">
-                        <img src="../Coding/image/User Icon.png" alt="UserIcon" style="width: 40px">
+                        <img src="../Coding/image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
                     </div>
                     <span id="usernameText">Username</span>
                 </div>
@@ -54,14 +56,14 @@
                 <form method="post">
                     <p>Have something to share? We welcome your feedback and suggestions.</p>
 
-                    <label for="name">Username:</label>
+                    <label for="name">*Username:</label>
                     <input type="text" id="name" name="name" required><br><br>
 
-                    <label for="email">Email:</label>
+                    <label for="email">*Email:</label>
                     <input type="email" id="email" name="email" required><br><br>
                     <span id="emailError"></span><br><br>
 
-                    <label for="comment">Comment:</label><br>
+                    <label for="comment">*Comment:</label><br>
                     <textarea id="comment" name="comment" placeholder="Write your comment here..." required></textarea><br><br><br>
                     
                     <button type="reset">Reset</button> 
@@ -71,8 +73,8 @@
             <p class="fcontact"><b>Contact Us:</b></p>
                     <!--gmail-->
                     <div class="gmail-icon">
-                        <img src="../Coding/image/Gmail Icon.png" alt="Gmail">
-                        <a href="mailto:auratheatre@gmail.com">auratheatre.gmail.com</a>
+                        <img src="../Coding/image/icon img/Gmail Icon.png" alt="Gmail">
+                        <a href="mailto:auratheatre@gmail.com">auratheatre@gmail.com</a>
                     </div>
                     <!--call-->
                     <a href="tel:011-28456793" class="phone">011-28456793</a>
@@ -83,7 +85,9 @@
             <nav class="fcontainer">
                 <!-- Logo -->
                 <div class="flogo">
-                    <img class="logo" src="../Coding/image/logo.png" alt="AuraTheatre Logo" height="60px">
+                    <a href="home.html">
+                        <img class="logo" src="../Coding/image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
                 </div>
 
                 <!-- Links -->
@@ -100,7 +104,7 @@
                     <p class="flocation"><b>Location:</b></p>
                     <p>
                         <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
-                        5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
                         </a> 
                     </p>
                 </div>
@@ -112,11 +116,11 @@
                 <div class="socialicon">
                     <div class="instagram-icon">
                         <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
-                        <img src="../Coding/image/Instagram Icon.png" alt="Instagram"></a>
+                        <img src="../Coding/image/icon img/Instagram Icon.png" alt="Instagram"></a>
                     </div>
                     <div class="facebook-icon">
                         <a href="https://www.facebook.com/" target="_blank"> 
-                        <img src="../Coding/image/Facebook Icon.png" alt="Facebook"></a>
+                        <img src="../Coding/image/icon img/Facebook Icon.png" alt="Facebook"></a>
                     </div>
                 </div>
             </div>
@@ -125,6 +129,8 @@
             <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
         </footer>
 
+        <script src="../Coding/js/search.js"></script>
+        <script src="../Coding/js/username.js"></script>
         <script src="../Coding/js/contact_form.js"></script>  
 
     </body>

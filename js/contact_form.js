@@ -7,7 +7,7 @@ const submitBtn = document.querySelector("button[type='submit']");
 
 // check email format
 function isValidEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // eg: user@example.com
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // eg: user@gmail.com
     return emailPattern.test(email); // returns true or false
 }
 

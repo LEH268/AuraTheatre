@@ -12,7 +12,7 @@ const form = document.querySelector("form.right-bar");
 
 // check email format
 function isValidEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // eg: user@example.com
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // eg: user@gmail.com
     return emailPattern.test(email); // returns true or false
 }
 
@@ -72,13 +72,18 @@ function handleSubmit(event){
         email.value.trim() === "" || !isValidEmail(email.value.trim()) ||
         password.value === "" || !isValidPassword(password.value) ||
         confirmpwd.value === "" || !passwordMatch(password.value, confirmpwd.value) ||
-        !agree.checked
-    ) {
+        !agree.checked) {
         alert("Please fill in all fields correctly before creating an account.");
         return;
     }
 
     alert("Account created successfully! You can now log in.");
+
+    // store for login validation
+    localStorage.setItem("userFullName", name.value.trim());
+    localStorage.setItem("userEmail", email.value.trim());
+    localStorage.setItem("userPassword", password.value);
+
     window.location.href = "log in.html";
 }
 

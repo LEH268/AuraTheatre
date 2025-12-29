@@ -1,7 +1,8 @@
 /* ===================== FOOTER ===================== */
 footer {
-    width: 100%;
-    padding: 25px 15px;
+    width: 100%; 
+    max-width: 100%;
+    padding: 25px 20px;
     background: rgba(20, 10, 40, 0.55);
     border-top: 2px solid rgba(130, 60, 255, 0.4);
     backdrop-filter: blur(12px);
@@ -9,6 +10,7 @@ footer {
     color: #d7e2ff;
     text-align: center;
     position: relative;
+    box-sizing: border-box; 
 }
 
 /* ===================== Footer Container ===================== */
@@ -17,8 +19,9 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 15px;
+    width: 95%;
+    margin: 0 auto; 
 }
 
 /* ===================== Footer Logo ===================== */
@@ -34,6 +37,7 @@ footer {
 .flinks ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .flinks li {
@@ -57,7 +61,7 @@ footer {
 .finfo p,
 .flocation {
     color: #d7e2ff;
-    font-size: 14px;
+    font-size: 15px;
     margin: 3px 0;
 }
 
@@ -111,14 +115,81 @@ footer {
 }
 
 /* ===================== Responsive ===================== */
+/* ===== Tablet & below ===== */
+@media screen and (max-width: 1024px) {
+    .fcontainer {
+        flex-wrap: wrap;
+        gap: 12px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .flogo img.logo {
+        width: 13vh;
+    }
+
+    .flinks a {
+        font-size: 14px;
+    }
+
+    .finfo p,
+    .flocation {
+        font-size: 13px;
+    }
+
+    .socialicon img {
+        width: 35px;
+    }
+}
+
+/* ===== Mobile ===== */
 @media screen and (max-width: 768px) {
     .fcontainer {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        text-align: center;
+        gap: 20px;
     }
 
-    .socialicon {
-        gap: 15px;
+    .flogo img.logo {
+        width: 10vh;
+    }
+
+    .flinks ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .finfo p,
+    .flocation {
+        font-size: 15px;
+    }
+
+    .socialicon img {
+        width: 30px;
+    }
+}
+
+/* ===== Small Mobile ===== */
+@media screen and (max-width: 480px) {
+    .flogo img.logo {
+        width: 8vh;
+    }
+
+    .flinks a {
+        font-size: 14px;
+    }
+
+    .finfo p,
+    .flocation {
+        font-size: 11px;
+    }
+
+    .socialicon img {
+        width: 28px;
+    }
+
+    .fcopyright {
+        font-size: 11px;
     }
 }

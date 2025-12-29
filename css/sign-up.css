@@ -8,7 +8,7 @@ html, body {
 
 /* Full-screen background */
 body {
-    background-image: url('../image/about us background.gif');
+    background-image: url('../image/background.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +58,8 @@ body::before {
 }
 
 form span{
-    color: red;
+    color: #ff7ad6;
+    text-shadow: 0 0 10px #ff2ac8;
     font-size: 12px;
     white-space: pre-line;
 }
@@ -209,6 +210,27 @@ button:hover {
     box-shadow: 0 0 25px rgba(255, 42, 200, 1);
 }
 
+.social-btn{
+    text-align: center;
+    padding: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border: 2px solid rgba(255, 42, 200, 0.9);
+    background: rgba(255, 42, 200, 0.75);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.25s;
+    box-shadow: 0 0 15px rgba(255, 42, 200, 0.7);
+}
+
+.social-btn:hover{
+    transform: scale(1.05);
+    background: rgba(255, 42, 200, 1);
+    box-shadow: 0 0 25px rgba(255, 42, 200, 1);
+    color: white; 
+}
+
 /* ======================= LINKS ======================= */
 
 a {
@@ -237,34 +259,139 @@ hr {
     margin: 15px 0; 
 }
 
-/* ======================= RESPONSIVE ======================= */
+/* ===================== PASSWORD VISIBILITY ===================== */
+input[type="password"]::-ms-reveal {
+  filter: invert(1);
+}
 
+/* ======================= RESPONSIVE ======================= */
+/* ===== Tablet & below ===== */
+@media screen and (max-width: 1024px) {
+
+    .form-area {
+        width: 90%;
+        height: 75%;
+    }
+
+    .left-bar img {
+        max-width: 300px;
+    }
+
+    form p {
+        font-size: 18px;
+    }
+
+    .logo-area h1 {
+        font-size: 22px;
+    }
+}
+
+/* ===== Mobile ===== */
 @media screen and (max-width: 768px) {
+
+    body {
+        align-items: flex-start;
+        padding: 20px 0;
+    }
+
+    .container {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 20px;
+    }
+
     .form-area {
         flex-direction: column;
         width: 90%;
+        height: auto;
     }
 
     .left-bar {
         border-right: none;
         border-bottom: 2px solid rgba(39, 232, 255, 0.4);
+        padding: 20px 0;
+    }
+
+    .left-bar img {
+        width: 60%;
+        max-width: 220px;
     }
 
     .right-bar {
-        padding: 20px;
+        max-height: none;
+        overflow: visible;
     }
 
     form p {
-        font-size: 20px;
+        font-size: 17px;
+    }
+
+    label {
+        font-size: 13px;
     }
 
     input[type="text"],
     input[type="email"],
     input[type="password"] {
-        width: 100%;
+        width: 95%;
+        font-size: 13px;
+        padding: 9px;
     }
 
-    button {
-        width: 100%;
+    button,
+    .social-btn {
+        font-size: 13px;
+        padding: 9px;
+    }
+}
+
+/* ===== Small Mobile ===== */
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 10px 0;
+    }
+
+    .form-area {
+        width: 95%;
+        border-radius: 12px;
+    }
+
+    .left-bar img {
+        width: 70%;
+        max-width: 180px;
+    }
+
+    .logo-area img {
+        height: 80px;
+    }
+
+    .logo-area h1 {
+        font-size: 20px;
+    }
+
+    form p {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button,
+    .social-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    a {
+        font-size: 12px;
     }
 }
