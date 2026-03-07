@@ -64,11 +64,11 @@ Or run it locally using the instructions below.
 
 *(Add screenshots after uploading images to GitHub)*
 
-### Home Page
-![Home Page](https://github.com/LEH268/AuraTheatre/blob/main/Home%20Page.png)
+### Login Page
+![Shows](https://github.com/LEH268/AuraTheatre/blob/main/Login%20Page.png)
 
 ### Home Page
-![Shows](https://github.com/LEH268/AuraTheatre/blob/main/Login%20Page.png)
+![Home Page](https://github.com/LEH268/AuraTheatre/blob/main/Home%20Page.png)
 
 ### Movie Details
 ![Performance](https://github.com/LEH268/AuraTheatre/blob/main/Movie%20Details.png)
