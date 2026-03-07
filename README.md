@@ -65,7 +65,7 @@ Or run it locally using the instructions below.
 *(Add screenshots after uploading images to GitHub)*
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page](https://github.com/LEH268/AuraTheatre/blob/main/Home%20Page.png)
 
 ### Theatre Listing
 ![Shows](screenshots/shows.png)
