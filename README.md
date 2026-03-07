@@ -67,11 +67,11 @@ Or run it locally using the instructions below.
 ### Home Page
 ![Home Page](https://github.com/LEH268/AuraTheatre/blob/main/Home%20Page.png)
 
-### Theatre Listing
-![Shows](screenshots/shows.png)
+### Home Page
+![Shows](https://github.com/LEH268/AuraTheatre/blob/main/Login%20Page.png)
 
-### Performance Page
-![Performance](screenshots/performance.png)
+### Movie Details
+![Performance](https://github.com/LEH268/AuraTheatre/blob/main/Movie%20Details.png)
 
 ---
 
